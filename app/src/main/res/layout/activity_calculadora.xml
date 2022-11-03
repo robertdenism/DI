@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gris_c"
     tools:context=".calculadora.Calculadora">
 
     <androidx.constraintlayout.widget.Guideline
@@ -25,28 +26,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="110.75dp" />
+        app:layout_constraintGuide_begin="96dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="715dp" />
+        app:layout_constraintGuide_begin="694dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="622dp" />
+        app:layout_constraintGuide_begin="603dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="16dp" />
+        app:layout_constraintGuide_begin="1dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
@@ -60,14 +61,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="529dp" />
+        app:layout_constraintGuide_begin="514dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="250dp" />
+        app:layout_constraintGuide_begin="219dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline9"
@@ -81,221 +82,253 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="436dp" />
+        app:layout_constraintGuide_begin="416dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="343dp" />
+        app:layout_constraintGuide_begin="327dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/bC"
         android:layout_width="60dp"
         android:layout_height="70dp"
         app:cornerRadius="160dp"
         android:text="c"
         android:elevation="20dp"
-        android:padding="10dp"
+        android:textColor="@color/rojo"
+        android:textSize="20dp"
+        android:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toStartOf="@+id/guideline13"
         app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toTopOf="@+id/guideline8" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/bMm"
         android:layout_width="60dp"
         android:layout_height="70dp"
         app:cornerRadius="160dp"
-        android:text="+/-"
+        android:text="+ -"
+        android:backgroundTint="@color/resto"
+        android:textColor="@color/rojo"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
         app:layout_constraintStart_toStartOf="@+id/guideline13"
         app:layout_constraintTop_toTopOf="@+id/guideline8" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/bPorcentaje"
         android:layout_width="60dp"
         android:layout_height="70dp"
         app:cornerRadius="160dp"
         android:text="%"
+        android:textColor="@color/rojo"
+        android:backgroundTint="@color/resto"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toStartOf="@+id/guideline15"
         app:layout_constraintStart_toStartOf="@+id/guideline14"
         app:layout_constraintTop_toTopOf="@+id/guideline8"
-        app:layout_constraintVertical_bias="0.517" />
+        app:layout_constraintVertical_bias="0.517"/>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/bParentesis"
         android:layout_width="60dp"
         android:layout_height="70dp"
         app:cornerRadius="160dp"
         android:text="()"
+        android:backgroundTint="@color/resto"
+        android:textColor="@color/rojo"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline15"
         app:layout_constraintTop_toTopOf="@+id/guideline8" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/b7"
         android:layout_width="60dp"
         android:layout_height="70dp"
         app:cornerRadius="160dp"
         android:text="7"
+        android:textSize="25dp"
+        android:backgroundTint="@color/c_Numeros"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toStartOf="@+id/guideline13"
         app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toTopOf="@+id/guideline11" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/b8"
         android:layout_width="60dp"
         android:layout_height="70dp"
         app:cornerRadius="160dp"
         android:text="8"
+        android:textSize="25dp"
+        android:backgroundTint="@color/c_Numeros"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
         app:layout_constraintStart_toStartOf="@+id/guideline13"
         app:layout_constraintTop_toTopOf="@+id/guideline11" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/b9"
         android:layout_width="60dp"
         android:layout_height="70dp"
         app:cornerRadius="160dp"
         android:text="9"
+        android:textSize="25dp"
+        android:backgroundTint="@color/c_Numeros"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toStartOf="@+id/guideline15"
         app:layout_constraintStart_toStartOf="@+id/guideline14"
         app:layout_constraintTop_toTopOf="@+id/guideline11" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/bMulti"
         android:layout_width="60dp"
         android:layout_height="70dp"
         app:cornerRadius="160dp"
         android:text="x"
+        android:backgroundTint="@color/resto"
+        android:textColor="@color/rojo"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline15"
         app:layout_constraintTop_toTopOf="@+id/guideline11" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/b4"
         android:layout_width="60dp"
         android:layout_height="70dp"
         app:cornerRadius="160dp"
         android:text="4"
+        android:textSize="25dp"
+        android:backgroundTint="@color/c_Numeros"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/guideline13"
         app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/b1"
         android:layout_width="60dp"
         android:layout_height="70dp"
         app:cornerRadius="160dp"
         android:text="1"
+        android:textSize="25dp"
+        android:backgroundTint="@color/c_Numeros"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline13"
         app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/b2"
         android:layout_width="60dp"
         android:layout_height="70dp"
         app:cornerRadius="160dp"
         android:text="2"
+        android:textSize="25dp"
+        android:backgroundTint="@color/c_Numeros"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
         app:layout_constraintStart_toStartOf="@+id/guideline13"
         app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/b3"
         android:layout_width="60dp"
         android:layout_height="70dp"
         app:cornerRadius="160dp"
         android:text="3"
+        android:textSize="25dp"
+        android:backgroundTint="@color/c_Numeros"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline15"
         app:layout_constraintStart_toStartOf="@+id/guideline14"
         app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/bSuma"
         android:layout_width="60dp"
         android:layout_height="70dp"
         app:cornerRadius="160dp"
         android:text="+"
+        android:backgroundTint="@color/resto"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline15"
         app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
     <Button
-        android:id="@+id/button17"
-        android:layout_width="60dp"
-        android:layout_height="70dp"
-        app:cornerRadius="160dp"
+        android:id="@+id/b0"
+        android:layout_width="157dp"
+        android:layout_height="66dp"
+        android:backgroundTint="@color/c_Numeros"
         android:text="0"
+        android:textSize="25dp"
+        app:cornerRadius="160dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toStartOf="@+id/guideline13"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
         app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
-    <Button
-        android:id="@+id/button18"
-        android:layout_width="60dp"
-        android:layout_height="70dp"
-        app:cornerRadius="160dp"
-        android:text="."
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toStartOf="@+id/guideline14"
-        app:layout_constraintStart_toStartOf="@+id/guideline13"
-        app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <Button
-        android:id="@+id/button19"
+        android:id="@+id/bPunto"
         android:layout_width="60dp"
         android:layout_height="70dp"
+        android:text="."
+        android:backgroundTint="@color/resto"
+        android:textColor="@color/rojo"
+        android:textSize="20dp"
         app:cornerRadius="160dp"
-        android:text="/"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/guideline15"
         app:layout_constraintStart_toStartOf="@+id/guideline14"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <Button
-        android:id="@+id/button20"
+        android:id="@+id/bIgual"
         android:layout_width="60dp"
         android:layout_height="70dp"
         app:cornerRadius="160dp"
         android:text="="
+        android:textColor="@color/rojo"
+        android:textSize="20dp"
+        android:backgroundTint="@color/naranja"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline15"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/b5"
         android:layout_width="60dp"
         android:layout_height="70dp"
         app:cornerRadius="160dp"
         android:text="5"
+        android:textSize="25dp"
+        android:backgroundTint="@color/c_Numeros"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
         app:layout_constraintStart_toStartOf="@+id/guideline13"
         app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/b6"
         android:layout_width="60dp"
         android:layout_height="70dp"
         android:text="6"
+        android:textSize="25dp"
+        android:backgroundTint="@color/c_Numeros"
         app:cornerRadius="160dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/guideline15"
@@ -303,14 +336,29 @@
         app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/bResta"
         android:layout_width="60dp"
         android:layout_height="70dp"
         app:cornerRadius="160dp"
         android:text="-"
+        android:backgroundTint="@color/resto"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline15"
         app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="318dp"
+        android:layout_height="171dp"
+        android:text="TextView"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:fontFamily="@font/platinum"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/guideline9" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
