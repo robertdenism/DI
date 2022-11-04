@@ -299,15 +299,17 @@
         android:id="@+id/bIgual"
         android:layout_width="60dp"
         android:layout_height="70dp"
-        app:cornerRadius="160dp"
+        android:backgroundTint="@color/naranja"
         android:text="="
         android:textColor="@color/rojo"
         android:textSize="20dp"
-        android:backgroundTint="@color/naranja"
+        app:cornerRadius="160dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="@+id/guideline15"
-        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintVertical_bias="0.571" />
 
     <Button
         android:id="@+id/b5"
@@ -349,13 +351,12 @@
         app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/resultado"
         android:layout_width="318dp"
         android:layout_height="171dp"
-        android:text="TextView"
+        android:fontFamily="@font/platinum"
         android:gravity="center"
         android:textSize="20dp"
-        android:fontFamily="@font/platinum"
         app:layout_constraintBottom_toTopOf="@+id/guideline8"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline5"
