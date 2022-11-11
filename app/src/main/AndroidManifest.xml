@@ -14,7 +14,7 @@
         android:theme="@style/Theme.ProyectosEclipse"
         tools:targetApi="31">
         <activity
-            android:name=".calculadora.Calculadora"
+            android:name=".calculadora.LogIn"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".calculadora.Calculadora"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
