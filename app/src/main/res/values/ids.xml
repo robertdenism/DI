@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textView12" type="id" />
+    <item name="guideline3" type="id" />
+    <item name="guideline16" type="id" />
+    <item name="textView9" type="id" />
+    <item name="textView7" type="id" />
+    <item name="textView8" type="id" />
+    <item name="textView6" type="id" />
+    <item name="textView4" type="id" />
+    <item name="textView2" type="id" />
+    <item name="guideline12" type="id" />
+    <item name="textView10" type="id" />
+    <item name="usuario" type="id" />
+    <item name="guideline17" type="id" />
+    <item name="contrasenia" type="id" />
+    <item name="botonEntrar" type="id" />
+    <item name="guideline18" type="id" />
+    <item name="imageView2" type="id" />
+    <item name="textView14" type="id" />
+    <item name="guideline20" type="id" />
+    <item name="guideline21" type="id" />
+    <item name="textView16" type="id" />
+</resources>
